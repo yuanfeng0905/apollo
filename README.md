@@ -22,6 +22,10 @@ Java客户端不依赖任何框架，能够运行于所有Java运行时环境，
 
 本地快速部署请参见[Quick Start](https://github.com/ctripcorp/apollo/wiki/Quick-Start)
 
+公益演示环境（Demo）:
+- [140.143.100.23:8070](http://140.143.100.23:8070/)
+- 账号/密码:apollo/admin
+
 # Screenshots
 ![配置界面](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/apollo-home-screenshot.png)
 
@@ -180,3 +184,15 @@ The project is licensed under the [Apache 2 license](https://github.com/ctripcor
 ![丁香园](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/dxy.png) 
 ![国槐科技](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/ghtech.png) 
 ![亲宝宝](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/qbb.png) 
+![华为视频直播](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/huawei_logo.png) 
+![微播易](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/weiboyi.png) 
+![欧飞](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/ofpay.png) 
+![迷说](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/mishuo.png) 
+![一下科技](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/yixia.png) 
+![DaoCloud](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/daocloud.png) 
+![汽摩交易所](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/cnvex.png) 
+![好未来教育集团](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/100tal.png) 
+![猎户星空](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/ainirobot.png) 
+![卓健科技](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/zhuojian.png) 
+![银江股份](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/enjoyor.png) 
+![途虎养车](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/tuhu.png) 
