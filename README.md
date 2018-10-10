@@ -1,14 +1,16 @@
-Apollo（配置中心）
+![apollo-logo](apollo-portal/src/main/resources/static/img/logo-detail.png)
 ================
 
 [![Build Status](https://travis-ci.org/ctripcorp/apollo.svg?branch=master)](https://travis-ci.org/ctripcorp/apollo)
 [![GitHub release](https://img.shields.io/github/release/ctripcorp/apollo.svg)](https://github.com/ctripcorp/apollo/releases)
+[![Maven Central Repo](https://img.shields.io/maven-central/v/com.ctrip.framework.apollo/apollo.svg)](https://mvnrepository.com/artifact/com.ctrip.framework.apollo/apollo-client)
 [![Coverage Status](https://coveralls.io/repos/github/ctripcorp/apollo/badge.svg?branch=master)](https://coveralls.io/github/ctripcorp/apollo?branch=master)
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 <a href="https://scan.coverity.com/projects/ctripcorp-apollo">
   <img alt="Coverity Scan Build Status" src="https://img.shields.io/coverity/scan/8244.svg"/>
 </a>
 [![codecov.io](https://codecov.io/github/ctripcorp/apollo/coverage.svg?branch=master)](https://codecov.io/github/ctripcorp/apollo?branch=master)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
 
 Apollo（阿波罗）是携程框架部门研发的分布式配置中心，能够集中化管理应用不同环境、不同集群的配置，配置修改后能够实时推送到应用端，并且具备规范的权限、流程治理等特性，适用于微服务配置管理场景。
 
@@ -21,6 +23,10 @@ Java客户端不依赖任何框架，能够运行于所有Java运行时环境，
 更多产品介绍参见[Apollo配置中心介绍](https://github.com/ctripcorp/apollo/wiki/Apollo%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83%E4%BB%8B%E7%BB%8D)
 
 本地快速部署请参见[Quick Start](https://github.com/ctripcorp/apollo/wiki/Quick-Start)
+
+公益演示环境（Demo）:
+- [140.143.100.23:8070](http://140.143.100.23:8070/)
+- 账号/密码:apollo/admin
 
 # Screenshots
 ![配置界面](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/apollo-home-screenshot.png)
@@ -100,7 +106,18 @@ Java客户端不依赖任何框架，能够运行于所有Java运行时环境，
   * [开源配置中心Apollo的设计与实现](http://www.infoq.com/cn/articles/open-source-configuration-center-apollo)
 
 # Support
-![tech-support-qq](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/tech-support-qq.png)
+<table>
+  <thead>
+    <th>Apollo配置中心技术支持②群<br />群号：904287263</th>
+    <th>Apollo配置中心技术支持①群<br />群号：375526581（已满）</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/tech-support-qq-2.png" alt="tech-support-qq-2"></td>
+      <td><img src="https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/tech-support-qq-1.png" alt="tech-support-qq-1"></td>
+    </tr>
+  </tbody>
+</table>
 
 # Contribution
   * Source Code: https://github.com/ctripcorp/apollo
@@ -180,3 +197,33 @@ The project is licensed under the [Apache 2 license](https://github.com/ctripcor
 ![丁香园](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/dxy.png) 
 ![国槐科技](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/ghtech.png) 
 ![亲宝宝](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/qbb.png) 
+![华为视频直播](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/huawei_logo.png) 
+![微播易](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/weiboyi.png) 
+![欧飞](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/ofpay.png) 
+![迷说](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/mishuo.png) 
+![一下科技](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/yixia.png) 
+![DaoCloud](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/daocloud.png) 
+![汽摩交易所](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/cnvex.png) 
+![好未来教育集团](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/100tal.png) 
+![猎户星空](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/ainirobot.png) 
+![卓健科技](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/zhuojian.png) 
+![银江股份](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/enjoyor.png) 
+![途虎养车](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/tuhu.png) 
+![河姆渡](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/homedo.png) 
+![新网银行](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/xwbank.png) 
+![中旅安信云贷](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/ctspcl.png) 
+![美柚](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/meiyou.png) 
+![震坤行](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/zkh-logo.png) 
+![万谷盛世](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/wgss.png) 
+![铂涛旅行](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/plateno.png) 
+![乐心](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/lifesense.png) 
+![亿投传媒](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/reachmedia.png) 
+![股先生](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/guxiansheng.png) 
+![财学堂](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/caixuetang.png) 
+![4399](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/4399.png) 
+![汽车之家](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/autohome.png) 
+![面包财经](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/mbcaijing.png) 
+![虎扑](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/hoopchina.png) 
+![搜狐汽车](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/sohu-auto.png) 
+![量富征信](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/liangfuzhengxin.png) 
+![卖好车](https://raw.githubusercontent.com/ctripcorp/apollo/master/doc/images/known-users/maihaoche.png) 

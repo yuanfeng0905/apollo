@@ -5,6 +5,10 @@ import static org.junit.Assert.assertTrue;
 
 import com.ctrip.framework.apollo.BaseIntegrationTest;
 import com.ctrip.framework.apollo.core.enums.Env;
+import com.ctrip.framework.apollo.core.internals.LegacyMetaServerProvider;
+import com.ctrip.framework.apollo.core.spi.MetaServerProvider;
+import com.google.common.collect.Maps;
+import java.util.Map;
 import javax.servlet.http.HttpServletResponse;
 import org.junit.After;
 import org.junit.Test;
@@ -15,9 +19,7 @@ public class MetaDomainTest extends BaseIntegrationTest {
   @After
   public void tearDown() throws Exception {
     super.tearDown();
-    System.clearProperty("fat_meta");
-    System.clearProperty("uat_meta");
-    System.clearProperty("lpt_meta");
+    MockMetaServerProvider.clear();
   }
 
   @Test
@@ -32,29 +34,48 @@ public class MetaDomainTest extends BaseIntegrationTest {
     String someResponse = "some response";
     startServerWithHandlers(mockServerHandler(HttpServletResponse.SC_OK, someResponse));
 
-    String validServer = "http://localhost:" + PORT;
+    String validServer = " http://localhost:" + PORT + " ";
     String invalidServer = "http://localhost:" + findFreePort();
 
-    System.setProperty("fat_meta", validServer + "," + invalidServer);
-    System.setProperty("uat_meta", invalidServer + "," + validServer);
+    MockMetaServerProvider.mock(Env.FAT, validServer + "," + invalidServer);
+    MockMetaServerProvider.mock(Env.UAT, invalidServer + "," + validServer);
 
-    MetaDomainConsts.initialize();
-
-    assertEquals(validServer, MetaDomainConsts.getDomain(Env.FAT));
-    assertEquals(validServer, MetaDomainConsts.getDomain(Env.UAT));
+    assertEquals(validServer.trim(), MetaDomainConsts.getDomain(Env.FAT));
+    assertEquals(validServer.trim(), MetaDomainConsts.getDomain(Env.UAT));
   }
 
   @Test
   public void testInvalidAddress() throws Exception {
-    String invalidServer = "http://localhost:" + findFreePort();
-    String anotherInvalidServer = "http://localhost:" + findFreePort();
+    String invalidServer = "http://localhost:" + findFreePort() + " ";
+    String anotherInvalidServer = "http://localhost:" + findFreePort() + " ";
 
-    System.setProperty("lpt_meta", invalidServer + "," + anotherInvalidServer);
-
-    MetaDomainConsts.initialize();
+    MockMetaServerProvider.mock(Env.LPT, invalidServer + "," + anotherInvalidServer);
 
     String metaServer = MetaDomainConsts.getDomain(Env.LPT);
 
-    assertTrue(metaServer.equals(invalidServer) || metaServer.equals(anotherInvalidServer));
+    assertTrue(metaServer.equals(invalidServer.trim()) || metaServer.equals(anotherInvalidServer.trim()));
+  }
+
+  public static class MockMetaServerProvider implements MetaServerProvider {
+
+    private static Map<Env, String> mockMetaServerAddress = Maps.newHashMap();
+
+    private static void mock(Env env, String metaServerAddress) {
+      mockMetaServerAddress.put(env, metaServerAddress);
+    }
+
+    private static void clear() {
+      mockMetaServerAddress.clear();
+    }
+
+    @Override
+    public String getMetaServerAddress(Env targetEnv) {
+      return mockMetaServerAddress.get(targetEnv);
+    }
+
+    @Override
+    public int getOrder() {
+      return LegacyMetaServerProvider.ORDER - 1;// just in front of LegacyMetaServerProvider
+    }
   }
 }
